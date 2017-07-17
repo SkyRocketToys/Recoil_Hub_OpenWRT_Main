@@ -1,0 +1,21 @@
+Source-Makefile: feeds/management/libssh/Makefile
+Package: libssh
+Version: 2015-12-18-be36586d74367f562937da041ce6a5615d647f3b
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: Libraries
+Title: SSH library
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: libssh-2015-12-18-be36586d74367f562937da041ce6a5615d647f3b.tar.gz
+License: LGPL-2.1+ BSD-2-Clause
+Type: ipkg
+Description:  libssh is a mulitplatform C library implementing the SSHv2 and SSHv1 protocol
+ for client and server implementations.
+http://www.libssh.org/
+Luka Perkov <luka@openwrt.org>
+@@
+
+

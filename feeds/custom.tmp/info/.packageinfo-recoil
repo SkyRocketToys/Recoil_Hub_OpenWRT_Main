@@ -1,0 +1,18 @@
+Source-Makefile: feeds/custom/recoil/Makefile
+Package: recoil
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uhttpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Network
+Title: Userspace application for the Hotgen Recoil
+Maintainer: Mark Fisher <fish@hotgen.com>
+Source: 
+Type: ipkg
+Description:  This package contains the userspace application which manages the player in the recoil network
+Mark Fisher <fish@hotgen.com>
+@@
+
+

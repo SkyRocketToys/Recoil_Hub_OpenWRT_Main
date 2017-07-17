@@ -1,0 +1,50 @@
+Source-Makefile: feeds/packages/lang/python-cffi/Makefile
+Package: python-cffi
+Submenu: Python
+Version: 1.8.3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffi +python-light +python-pycparser
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python
+Build-Depends/host: libffi/host python-pycparser/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-cffi
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: cffi-1.8.3.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Foreign Function Interface for Python calling C code.
+http://cffi.readthedocs.org/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-cffi
+Submenu: Python
+Version: 1.8.3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffi +python3-light +python3-pycparser
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Build-Depends/host: libffi/host python-pycparser/host
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python3-cffi
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: cffi-1.8.3.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Foreign Function Interface for Python calling C code.
+.
+(Variant for Python3)
+http://cffi.readthedocs.org/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+

@@ -1,0 +1,87 @@
+Source-Makefile: feeds/management/sysrepo/Makefile
+Package: libsysrepo
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libprotobuf-c +libev +libavl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: YANG-based data store library
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: YANG-based data store library
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepod
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: YANG-based data store daemon
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: YANG-based data store daemon
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepoctl
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: sysrepo cli tool
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: sysrepo cli tool
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepocfg
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: sysrepo configuration tool
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: sysrepo configuration tool
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepo-plugind
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: sysrepo plugin daemon
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: sysrepo plugin daemon
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+

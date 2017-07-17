@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/net/inadyn/Makefile
+Package: inadyn
+Submenu: IP Addresses and Names
+Version: 2017-02-02-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +confuse +libopenssl +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A Dynamic DNS client with SSL/TLS support
+Maintainer: Daniel Engberg <daniel.engberg.lists@pyret.net>
+Source: inadyn-2017-02-02.tar.xz
+License: GPL-2.0
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Suitable for embedded systems, written in C.
+https://github.com/troglobit/inadyn
+Daniel Engberg <daniel.engberg.lists@pyret.net>
+@@
+
+

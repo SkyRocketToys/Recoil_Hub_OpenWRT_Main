@@ -1,0 +1,21 @@
+Source-Makefile: feeds/packages/net/seafile-ccnet/Makefile
+Package: seafile-ccnet
+Version: 6.0.7-a0de32b9cfeca98ab93d84cacbe9d315d7ecca35-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsearpc +libevent2 +libopenssl +glib2 +python +libzdb +libuuid +libpthread +libsqlite3 +jansson +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: vala/host
+Section: net
+Category: Network
+Title: Seafile server - ccnet component
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
+Source: seafile-ccnet-6.0.7-a0de32b9cfeca98ab93d84cacbe9d315d7ecca35.tar.gz
+License: GPL-3.0
+Type: ipkg
+Description:    Ccnet is a framework for writing networked applications in C.
+http://seafile.com/
+Gergely Kiss <mail.gery@gmail.com>
+@@
+
+

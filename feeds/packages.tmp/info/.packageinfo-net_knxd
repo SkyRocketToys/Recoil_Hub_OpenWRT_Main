@@ -1,0 +1,40 @@
+Source-Makefile: feeds/packages/net/knxd/Makefile
+Package: knxd
+Version: 2017-01-18-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libstdcpp +libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: argp-standalone
+Section: net
+Category: Network
+Title: EIB KNX daemon
+Maintainer: Othmar Truniger <github@truniger.ch>
+Source: knxd-8255bf08b6e1a972c1489012b570bf0ff8679cb0.tar.gz
+License: GPL-2.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: EIB KNX Daemon
+Othmar Truniger <github@truniger.ch>
+@@
+
+Package: knxd-tools
+Version: 2017-01-18-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: argp-standalone
+Section: net
+Category: Network
+Title: EIB KNX Utils
+Maintainer: Othmar Truniger <github@truniger.ch>
+Source: knxd-8255bf08b6e1a972c1489012b570bf0ff8679cb0.tar.gz
+License: GPL-2.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: EIB KNX Tools
+Othmar Truniger <github@truniger.ch>
+@@
+
+

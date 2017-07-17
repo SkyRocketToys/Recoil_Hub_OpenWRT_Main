@@ -1,0 +1,19 @@
+Source-Makefile: feeds/targets/mpc52xx/Makefile
+Target: mpc52xx
+Target-Board: mpc52xx
+Target-Name: Freescale MPC52xx
+Target-Path: /home/recoil/openwrt
+Target-Arch: powerpc
+Target-Arch-Packages: mpc52xx
+Target-Features: dt ext4 gpio pci targz usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=603e
+CPU-Type: 603e
+Linux-Version: 3.18.44
+Linux-Release: 1
+Linux-Kernel-Arch: powerpc
+Target-Description:
+	Build images for the Freescale MPC52xx based boards.
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe firewall odhcpd odhcp6c 
+

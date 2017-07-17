@@ -1,0 +1,142 @@
+Source-Makefile: feeds/packages/net/transmission/Makefile
+Package: transmission-daemon-openssl
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libevent2 +librt +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: BitTorrent client (with OpenSSL)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Require-User: transmission=224:transmission=224
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  Transmission is a simple BitTorrent client.
+ It features a very simple, intuitive interface
+ on top on an efficient, cross-platform back-end.
+ This package contains the daemon itself.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+Package: transmission-daemon-mbedtls
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libevent2 +librt +zlib +libmbedtls
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mbedtls
+Section: net
+Category: Network
+Title: BitTorrent client (with mbed TLS)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Require-User: transmission=224:transmission=224
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  Transmission is a simple BitTorrent client.
+ It features a very simple, intuitive interface
+ on top on an efficient, cross-platform back-end.
+ This package contains the daemon itself.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+Package: transmission-cli-openssl
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libevent2 +librt +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: BitTorrent client (with OpenSSL)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  CLI utilities for transmission.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+Package: transmission-cli-mbedtls
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libevent2 +librt +zlib +libmbedtls
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mbedtls
+Section: net
+Category: Network
+Title: BitTorrent client (with mbed TLS)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  CLI utilities for transmission.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+Package: transmission-remote-openssl
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libevent2 +librt +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: BitTorrent client (with OpenSSL)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  CLI remote interface for transmission.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+Package: transmission-remote-mbedtls
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpthread +libevent2 +librt +zlib +libmbedtls
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mbedtls
+Section: net
+Category: Network
+Title: BitTorrent client (with mbed TLS)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  CLI remote interface for transmission.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+Package: transmission-web
+Submenu: BitTorrent
+Version: 2.92+git-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_transmission-daemon-openssl||PACKAGE_transmission-daemon-mbedtls)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: BitTorrent client (webinterface)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: transmission-2.92+git-35fea28d1a37875ef7480ac061754df617805b19.tar.xz
+Type: ipkg
+Description:  Webinterface resources for transmission.
+http://www.transmissionbt.com
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+

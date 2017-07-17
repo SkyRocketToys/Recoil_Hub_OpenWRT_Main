@@ -1,0 +1,394 @@
+Source-Makefile: feeds/management/freecwmp/Makefile
+Package: freecwmp
+Version: 2014-06-12-8f3c163fc85337e63bfa64da3c02f10d1fe3b169
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libfreecwmp +libuci +libubox +libubus +libmicroxml +shflags
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: CWMP client
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: freecwmp-2014-06-12-8f3c163fc85337e63bfa64da3c02f10d1fe3b169.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description:  A free client implementation of CWMP (TR-069) protocol
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/freenetconfd/Makefile
+Package: freenetconfd
+Version: 2015-11-12-9b4dc3f45982ac9ede2db2218f5578f7268528ba
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci +libubox +libubus +libroxml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: netconf server
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: freenetconfd-2015-11-12-9b4dc3f45982ac9ede2db2218f5578f7268528ba.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: netconf server
+http://www.freenetconf.org/
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/freenetconfd-plugin-examples/Makefile
+Package: freenetconfd-plugin-examples
+Version: 2015-06-28-4a5dd9be91aae502b3f6a930558159d4ee6a775a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +freenetconfd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: freenetconfd example plugins
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: freenetconfd-plugin-examples-2015-06-28-4a5dd9be91aae502b3f6a930558159d4ee6a775a.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: freenetconfd example plugins
+http://www.freenetconf.org/
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/freesub/Makefile
+Package: freesub
+Version: 2014-12-03-a1a38e80c6642af723d6aa65f64910dcf27cb3da
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: SSH subsystem helper
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: freesub-2014-12-03-a1a38e80c6642af723d6aa65f64910dcf27cb3da.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: SSH subsystem helper
+http://www.freenetconf.org/
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/libfreecwmp/Makefile
+Package: libfreecwmp
+Version: 2014-06-12-d2fdd97d66fde14859c06228a922066d9e8b669b
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: CWMP library
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: libfreecwmp-2014-06-12-d2fdd97d66fde14859c06228a922066d9e8b669b.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: CWMP library
+http://libfreecwmp.org/
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/libmicroxml/Makefile
+Package: libmicroxml
+Version: 2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: XML library
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: libmicroxml-2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa.tar.gz
+License: LGPL-2.0
+LicenseFiles: COPYING
+Type: ipkg
+Description:  A micro sized XML library
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/libnetconf/Makefile
+Package: libnetconf
+Version: 0.10.0-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +zlib +LIBNETCONF_ENABLE_TLS:libopenssl +LIBNETCONF_ENABLE_VALIDATION:libxslt +LIBNETCONF_ENABLE_URL:libcurl +LIBNETCONF_USE_LIBSSH:libssh
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: libs
+Category: Libraries
+Title: NETCONF library
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: libnetconf-0.10.0.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:  libnetconf is the NETCONF library in C intended for building NETCONF clients and servers.
+
+ libnetconf provides basic functions to connect NETCONF client and server to each other via
+ SSH, to send and receive NETCONF messages and to store and work with the configuration data
+ in a datastore.
+https://github.com/cesnet/libnetconf
+Jiri Slachta <jiri@slachta.eu>
+@@
+Config:
+  source "feeds/management/libnetconf/Config.in"
+@@
+
+
+Source-Makefile: feeds/management/libnetconf2/Makefile
+Package: libnetconf2
+Version: 0.7.42-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libssh +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: NETCONF library
+Maintainer: 
+Source: libnetconf2-0.7.42.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description:  libnetconf2 is the NETCONF library in C intended for building NETCONF clients and servers.
+
+ libnetconf2 provides basic functions to connect NETCONF client and server to each other via
+ SSH, to send and receive NETCONF messages. NETCONF datastore implementation is not included.
+https://github.com/cesnet/libnetconf2/
+
+@@
+
+
+Source-Makefile: feeds/management/libssh/Makefile
+Package: libssh
+Version: 2015-12-18-be36586d74367f562937da041ce6a5615d647f3b
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: Libraries
+Title: SSH library
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: libssh-2015-12-18-be36586d74367f562937da041ce6a5615d647f3b.tar.gz
+License: LGPL-2.1+ BSD-2-Clause
+Type: ipkg
+Description:  libssh is a mulitplatform C library implementing the SSHv2 and SSHv1 protocol
+ for client and server implementations.
+http://www.libssh.org/
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/libyang/Makefile
+Package: libyang
+Version: 0.11.93-96c3e9e1e0153e2c7ec0db2bf4ffda3aecefa91a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: YANG data modeling language library
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: libyang-0.11.93-96c3e9e1e0153e2c7ec0db2bf4ffda3aecefa91a.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: YANG data modeling language library
+https://github.com/CESNET/libyang
+Luka Perkov <luka@openwrt.org>
+@@
+
+Package: yanglint
+Version: 0.11.93-96c3e9e1e0153e2c7ec0db2bf4ffda3aecefa91a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: YANG data modeling language utility
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: libyang-0.11.93-96c3e9e1e0153e2c7ec0db2bf4ffda3aecefa91a.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description: YANG data modeling language utility
+https://github.com/CESNET/libyang
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/netopeer2-cli/Makefile
+Package: netopeer2-cli
+Version: 0.2.33
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libnetconf2 +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: Netopeer2 cli tool
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: netopeer2-cli-db79cb2cdf1d50078b5095d1ab01a4097f1a3f28.tar.bz2
+License: BSD-3-Clause
+Type: ipkg
+Description: Netopeer2 cli tool
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+
+Source-Makefile: feeds/management/netopeer2-server/Makefile
+Package: netopeer2-server
+Version: 0.2.33
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sysrepod +sysrepoctl +sysrepocfg +libnetconf2 +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: NETCONF server
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: netopeer2-server-db79cb2cdf1d50078b5095d1ab01a4097f1a3f28.tar.bz2
+License: BSD-3-Clause
+Type: ipkg
+Description: NETCONF server
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+
+Source-Makefile: feeds/management/shflags/Makefile
+Package: shflags
+Version: 2012-06-11-c12b30cebb92b49c5edb6df255c0952c65b4ddc6
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +getopt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: shflags
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: shflags-2012-06-11-c12b30cebb92b49c5edb6df255c0952c65b4ddc6.tar.gz
+License: LGPL-2.1
+Type: ipkg
+Description:  command-line flags module for Unix shell scripts
+http://code.google.com/p/shflags/
+Luka Perkov <luka@openwrt.org>
+@@
+
+
+Source-Makefile: feeds/management/shtool/Makefile
+Package: shtool
+Version: 2.0.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: The GNU Portable Shell Tool
+Maintainer: 
+Source: shtool-2.0.8.tar.gz
+License: GPL-2.0+
+Type: ipkg
+Description:  GNU shtool is a compilation of small but very stable and portable shell
+ scripts into a single shell tool.
+
+@@
+
+
+Source-Makefile: feeds/management/sysrepo/Makefile
+Package: libsysrepo
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libprotobuf-c +libev +libavl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: YANG-based data store library
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: YANG-based data store library
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepod
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: YANG-based data store daemon
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: YANG-based data store daemon
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepoctl
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: sysrepo cli tool
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: sysrepo cli tool
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepocfg
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: sysrepo configuration tool
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: sysrepo configuration tool
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+Package: sysrepo-plugind
+Version: 0.5.11
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: sysrepo plugin daemon
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: sysrepo-be8d146bc4c580e9a8914fa94ef1729d1467122b.tar.bz2
+License: ASL-2.0
+Type: ipkg
+Description: sysrepo plugin daemon
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+

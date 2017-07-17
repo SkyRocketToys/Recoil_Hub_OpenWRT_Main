@@ -1,0 +1,19 @@
+Source-Makefile: feeds/management/netopeer2-cli/Makefile
+Package: netopeer2-cli
+Version: 0.2.33
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libnetconf2 +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: util
+Category: Utilities
+Title: Netopeer2 cli tool
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Source: netopeer2-cli-db79cb2cdf1d50078b5095d1ab01a4097f1a3f28.tar.bz2
+License: BSD-3-Clause
+Type: ipkg
+Description: Netopeer2 cli tool
+Mislav Novakovic <mislav.novakovic@sartura.hr>
+@@
+
+

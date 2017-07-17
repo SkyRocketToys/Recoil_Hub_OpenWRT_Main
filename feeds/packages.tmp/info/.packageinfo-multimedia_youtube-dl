@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/multimedia/youtube-dl/Makefile
+Package: youtube-dl
+Version: 2017.02.17-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-openssl +python-email +python-xml +python-codecs +python-ctypes +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: utility to download videos from YouTube.com
+Maintainer: Adrian Panella <ianchi74@outlook.com>
+Source: youtube-dl-2017.02.17.tar.gz
+License: Unlicense
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   youtube-dl is a small command-line program to download videos 
+  from YouTube.com and a few more sites. 
+  It requires the Python interpreter.
+https://youtube-dl.org
+Adrian Panella <ianchi74@outlook.com>
+@@
+
+

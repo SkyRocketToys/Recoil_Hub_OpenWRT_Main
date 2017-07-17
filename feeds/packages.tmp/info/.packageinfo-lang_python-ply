@@ -1,0 +1,50 @@
+Source-Makefile: feeds/packages/lang/python-ply/Makefile
+Package: python-ply
+Submenu: Python
+Version: 3.9-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python-ply
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: ply-3.9.tar.gz
+License: BSD-3-Clause
+LicenseFiles: README.md
+Type: ipkg
+Description: PLY is a 100% Python implementation of the common parsing tools lex
+and yacc.
+http://www.dabeaz.com/ply/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-ply
+Submenu: Python
+Version: 3.9-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Build-Types: host
+Section: lang
+Category: Languages
+Title: python3-ply
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: ply-3.9.tar.gz
+License: BSD-3-Clause
+LicenseFiles: README.md
+Type: ipkg
+Description: PLY is a 100% Python implementation of the common parsing tools lex
+and yacc.
+.
+(Variant for Python3)
+http://www.dabeaz.com/ply/
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+

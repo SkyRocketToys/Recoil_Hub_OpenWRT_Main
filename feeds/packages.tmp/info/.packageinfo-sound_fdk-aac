@@ -1,0 +1,21 @@
+Source-Makefile: feeds/packages/sound/fdk-aac/Makefile
+Package: fdk-aac
+Version: 0.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @BUILD_PATENTED
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: sound
+Category: Sound
+Title: Fraunhofer FDK AAC Codec Library
+Maintainer: Daniel Engberg <daniel.engberg.lists@pyret.net>
+Source: fdk-aac-0.1.5.tar.xz
+License: Fraunhofer-FDK-AAC-for-Android
+LicenseFiles: NOTICE
+Type: ipkg
+Description:   Port of the Fraunhofer FDK AAC Codec Library for Android
+https://sourceforge.net/projects/opencore-amr/
+Daniel Engberg <daniel.engberg.lists@pyret.net>
+@@
+
+

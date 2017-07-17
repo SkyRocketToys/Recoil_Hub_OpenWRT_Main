@@ -1,0 +1,19 @@
+Source-Makefile: feeds/targets/cobalt/Makefile
+Target: cobalt
+Target-Board: cobalt
+Target-Name: Cobalt Microservers
+Target-Path: /home/recoil/openwrt
+Target-Arch: mipsel
+Target-Arch-Packages: cobalt
+Target-Features: display ext4 pci rtc targz usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -march=r5000
+CPU-Type: 5k
+Linux-Version: 3.18.44
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Cobalt servers systems (Qube/Qube2/RaQ/RaQ2).
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe firewall odhcpd odhcp6c 
+
